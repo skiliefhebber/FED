@@ -1,0 +1,187 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	margin: 0;
+}
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+
+header h1 {
+	display:flex;
+	position:absolute;
+	top:470px;
+	left:30px;
+
+	font-family:'Swiss';
+	color:white;
+	font-size:29.58px;
+	font-weight:100;
+
+}
+
+header h2 {
+	display:flex; 
+	justify-content:center;
+
+	color:#67645e;
+	background-color:#f1f0ed;
+
+	font-family:'Swiss';
+	font-size:12px;
+	font-weight: 600;
+
+	border-radius:1em;
+
+	padding:1.1em;
+	margin-top:1.2em;
+	margin-left:0.7em;
+	margin-right:0.7em;
+	margin-bottom:1.6em;
+
+	
+}
+
+main video {
+	width:406px;
+	height:487,5px;
+
+	border-radius:14px;
+	
+	margin-left:4px;
+}
+
+
+/* jouw code */
+
+section:first-of-type {
+	display:flex;
+	
+	overflow-x:scroll;
+
+}
+
+section:first-of-type article:first-of-type {
+	display: flex;
+	flex-direction:column;
+
+	background:#f4f4f4;
+
+	border-radius:14px;
+	margin-top:16px; 
+	margin-left:4px;
+	padding-bottom:1em;
+	padding-left:2em;
+}
+
+
+
+section:first-of-type h2{
+	display:flex;
+	
+	
+	color:#67645e;
+
+	font-size:40px;
+	font-family:'Rektorat Heavy';
+
+	border-radius:10px;
+
+}
+
+
+section:first-of-type article:first-of-type img{
+	width:295px;
+	height:300px;
+}
+
+
+section:first-of-type article:nth-child(2) {
+	display:flex;
+	flex-direction:column;
+
+	background:#f4f4f4;
+
+	height:27.5em;
+	width:20.5em;
+
+	border-radius:14px;
+	margin-top:16px; 
+	margin-left:20px;
+}
+
+section:first-of-type article:nth-child(3) {
+	display:flex;
+	flex-direction:column;
+
+	background:#f4f4f4;
+
+	height:27.5em;
+	width:20.5em;
+
+	border-radius:14px;
+	margin-top:16px; 
+	margin-left:20px;
+}
+
+section:first-of-type article:nth-child(3) img{
+	display:flex;
+
+	border-radius:14px;
+
+}
+
+section:nth-of-type(2) article img {
+	width:25.4em;
+	height:30em;
+	
+	margin-top:3em;
+}
+
+article {
+	flex:none;
+}
+/********************/
+	/* ALLE @'S */
+/********************/
+
+@font-face {
+	font-family: "Swiss";
+	src: url('//www.rhodeskin.com/cdn/shop/t/827/assets/195b0c1b-165f-4bd1-b23f-cbb6a9a3aa24.woff2?v=83533615405617532041725654277') format("woff2");
+  }
+  @font-face {
+	font-family: "Swiss";
+	src: url('//www.rhodeskin.com/cdn/shop/t/827/assets/60a6c625-19b1-4df2-8635-49ba40161273.woff2?v=102607975385634896091725654277') format("woff2");
+	font-weight: bold;
+  }
+  @font-face {
+	font-family: "Rektorat Heavy";
+	src: url('//www.rhodeskin.com/cdn/shop/t/827/assets/NNRektoratWeb-Heavy.woff2?v=64959517310183983311725654277') format("woff2");
+  }

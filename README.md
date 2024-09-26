@@ -161,7 +161,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+ Mijn website is op de eerste pagina erg toegankelijk en heb ik getest met de screenreader. Als ik de website open, begint de VoiceOver automatisch met praten en gaat hij van boven naar beneden de website. Ook was het fijn dat hij opnoemde wanneer er een H2 element was en een afbeelding. Dan werd de alt genoemd die ik in de html heb vermeld. Wanneer er een carrousel was swipete hij er zelf doorheen. Het probleem hierbij was helaas wel dat de afbeeldingen niet genoemd werden en alleen de titels.
+
+ Na de carrousel ging alles heel makkelijk en vertelde de VoiceOver ook wanneer er een knop was om op te klikken en hoe je dit moest doen.
+<img src="images/opeenknopklikken.jpg" width="375px" alt='Screenreader voorlezen'>
+
+Op de tweede pagina deed de Voiceover er hetzelfde over. Ik kwam er wel achter dat de navigatiebar eigenlijk niet duidelijk genoeg werd benoemd en dat ik hier verandering in moet maken.
+
+Gelukkig werd er wel duidelijk aangegeven wanneer er geswiped moest worden dat de afbeeldingen horizontaal naast elkaar stonden.
+
+Na de test ben ik wel de alt namen van de laatste carrousel gaan aanpassen, want er werden eerder niet duidelijke namen aangegeven.
+Before:
+<img src="images/before.jpg" width="375px" alt='Before alt namen'>
+After:
+<img src="images/after.jpg" width="375px" alt='After alt namen'>
 
 </details>
 
@@ -189,6 +202,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
    Ik was bezig met de afbeeldingen goed te zetten van de zesde section en kreeg steeds dat de plaatjes of meters uit elkaar stonden, of onder elkaar gingen staan. Ik heb af en toe wat vragen gesteld aan chatGPT en bleek uiteindelijk te zijn dat ik niet width:100% moest maken van de afbeelding maar width:100vw. 
    <img src="images/chatgpt.jpg" width="375px" alt='ChatGPT'>
+
+Tijdens de 2e les van deze week had ik een vraag over een enorme witruimte die ik had naast mijn content. Na veel zoeken moest ik het kleine scherm annuleren en het op het hele scherm bekijken en zag ik dat een svg heel groot was. Dit kwam omdat het in vw stond en alles in de footer position:absolute of relative had. Door alles in display:flex te zetten met wat ik eerder in de website al had gedaan, ging dit probleem weer weg!
+
 
    <!-- meer problemen neerzetten -->
 

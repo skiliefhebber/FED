@@ -1,19 +1,23 @@
 // JavaScript Document
 console.log("hi");
 
-var openButton = document.querySelector("header > button");
-var sluitButton = document.querySelector("nav button");
-var deNav = document.querySelector("nav");
+const buttonOpen = document.querySelector("nav button");
+const buttonDicht = document.querySelector(".navigatie2 button");
+const nav1 = document.querySelector(".navigatie1");
+const nav2 = document.querySelector(".navigatie2");
 
-openButton.onclick = openMenu;
-sluitButton.onclick = sluitMenu;
+buttonOpen.addEventListener('click', ( ) => {
+    nav1.classList.add('menudicht');
+    nav2.classList.add('menuopen');
+})
 
-function openMenu() {  
-    deNav.classList.add("toonMenu");
-  }
-  
-function sluitMenu() {
-    deNav.classList.remove("toonMenu");
-  }
+console.log('Hoi');
 
-console.log("hallo");
+buttonDicht.addEventListener('click', ( ) => {
+    nav2.classList.remove('menuopen');
+    nav1.classList.remove('menudicht');
+    
+})
+
+console.log('test');
+
